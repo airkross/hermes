@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Muller Bold';
+    src: local('Muller Bold'), local('Muller-Bold'),
+        url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff'),
+        url('../fonts/MullerBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Regular';
+    src: local('Muller Regular'), local('Muller-Regular'),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff'),
+        url('../fonts/MullerRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Medium';
+    src: local('Muller Medium'), local('Muller-Medium'),
+        url('../fonts/MullerMedium.woff2') format('woff2'),
+        url('../fonts/MullerMedium.woff') format('woff'),
+        url('../fonts/MullerMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Общие */
+.container {
+    max-width: 988px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.h2 {
+    color: #3fb2d1;
+    font-family: "Muller Bold";
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* header */
+.header {
+    /* height: 80px; */
+    border-bottom: 2px solid #3fb2d1;
+}
+
+.header-wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+
+.menu {
+    display: -webkit-box;
+    display: flex;
+    height: 80px;
+    -webkit-box-align: center;
+            align-items: center;
+    max-width: 650px;
+    width: 100%;
+}
+
+.menu-item {
+    max-width: 129px;
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: center;
+            justify-content: center;
+}
+
+.menu-item:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 51px;
+    background: #3fb2d1;
+}
+
+
+.menu-link {
+    color: #191919;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding: 9px 0;
+}
+
+.btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ebbb5f;
+    color: #191919;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #eb9c0b;
+}
+
+.btn-feedback {
+    /* padding: 7px 22px; */
+    height: 29px;
+    max-width: 200px;
+    width: 100%;
+}
+
+/* end header */
+
+
+/* nav block */
+.nav {
+    border-bottom: 2px solid #3fb2d1;
+}
+
+.nav-wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    height: 70px;
+}
+
+.nav-contacts {
+    display: -webkit-box;
+    display: flex;
+    margin-left: 48px;
+}
+
+.contacts-phone {
+    display: -webkit-box;
+    display: flex;
+}
+
+.contacts-phone-numbers {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-left: 25px;
+
+}
+
+.contacts-phone-numbers a {
+    color: #191919;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contacts-phone-numbers a:first-child {
+    margin-bottom: 10px;
+}
+
+
+.contacts-address {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-left: 46px;
+}
+
+.contacts-address span {
+    color: #191919;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contacts-address span:first-child {
+    margin-bottom: 10px;
+}
+
+.contacts-phone-icon-block {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+}
+
+.contacts-search {
+    display: -webkit-box;
+    display: flex;
+    cursor: pointer;
+    padding-left: 21px;
+    padding-right: 21px;
+    -webkit-box-align: center;
+            align-items: center;
+    border: 1px solid #e8e8e8;
+    border-radius: 18px;
+    margin-left: 30px;
+}
+
+.contacts-search input {
+    border: none;
+    outline: none;
+    padding-right: 10px;
+    width: 247px;
+}
+
+/* end nav block */
+
+
+/* layer block */
+.layer {
+    min-height: 210px;
+    width: 100%;
+    background: url('../img/bg-layer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* end layer block */
+
+/* catalog */
+.catalog {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    border-bottom: 1px solid #ebbb5f;
+}
+
+.cat-content {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+
+.cat-title {
+    margin-bottom: 77px;
+}
+
+.cat-card-img-block {
+    margin-bottom: 23px;
+}
+
+.cat-catd-discription {
+    color: #7b7b7b;
+    font-family: "Muller Bold";
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.cat-card {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 28px;
+    /* margin-left: 27px; */
+}
+
+.cat-catd-discription {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.cat-card:hover .cat-catd-discription {
+    color: #3fb2d1;
+    font-family: "Muller Bold";
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+.cat-card:first-child {
+    margin-left: 0;
+}
+
+/* end catalog */
+
+
+/* feedback */
+.feedback {
+    width: 100%;
+    padding-top: 63px;
+    padding-bottom: 93px;
+}
+
+.feedback-forms {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+
+.feedback-title {
+    margin-bottom: 90px;
+}
+
+.feedback-form {
+    max-width: 428px;
+    max-width: 428px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    padding-bottom: 56px;
+    padding-top: 38px;
+    box-shadow: 7px 9px 24px 8px rgba(0, 0, 0, 0.13);
+}
+
+.feedback-form-title {
+    color: #333333;
+    font-family: "Muller Bold";
+    font-size: 29px;
+    margin: 0 auto;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -1.2px;
+    max-width: 266px;
+    margin-bottom: 25px;
+}
+
+.feedback-form-inputs {
+    text-align: center;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #a7a7a7;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    max-width: 270px;
+    width: 100%;
+    margin-bottom: 42px;
+    height: 32px;
+}
+
+.input::-webkit-input-placeholder {
+    color: #b6b6b6;
+    font-family: "Muller Medium";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input::-moz-placeholder {
+    color: #b6b6b6;
+    font-family: "Muller Medium";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input:-ms-input-placeholder {
+    color: #b6b6b6;
+    font-family: "Muller Medium";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input::-ms-input-placeholder {
+    color: #b6b6b6;
+    font-family: "Muller Medium";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input::placeholder {
+    color: #b6b6b6;
+    font-family: "Muller Medium";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-form-btn {
+    max-width: 256px;
+    width: 100%;
+    height: 29px;
+    background-color: #ebbb5f;
+    margin: 0 auto;
+}
+
+.contact-form {
+    padding-top: 38px;
+    padding-bottom: 57px;
+    box-shadow: 7px 9px 24px 8px rgba(0, 0, 0, 0.13);
+    max-width: 428px;
+    width: 100%;
+}
+
+.contact-form .feedback-form-title {
+    margin-bottom: 53px;
+}
+
+.contact-form-local {
+    width: 100%;
+    padding-left: 94px;
+}
+
+.local {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.local a {
+    color: #333333;
+    font-family: "Muller Medium";
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.local span {
+    color: #a3a3a3;
+    font-family: "Muller Medium";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.social-block {
+    margin-top: 60px;
+}
+
+/* end feedback */
+
+
+/*  footer */
+.footer {
+    width: 100%;
+    min-height: 164px;
+    background-color: #3fb2d1;
+}
+
+/* end footer */
