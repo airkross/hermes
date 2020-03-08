@@ -530,9 +530,15 @@ a {
     position: relative;
     z-index: 999;
 }
-.db{
+
+.db {
     display: block;
 }
+
+.ac-menu-item .db-ac {
+    display: block;
+}
+
 .drop-block {
     position: absolute;
     left: 0;
@@ -547,16 +553,36 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
-.nav-drop-content ul {
 
-}
-.nav-drop-content .menu-item:after{
+.nav-drop-content ul {}
+
+.nav-drop-content .menu-item:after {
     height: 30px;
 }
-.nav-drop-content .menu{
-    height: 43px;
-}
 
+.nav-drop-content .menu {
+    height: 43px;
+    height: 43px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-drop-content .menu-item{
+    max-width: unset;
+}
+.nav-drop-content .menu-link{
+    transition: .3s;
+}
+.nav-drop-content .menu-link:hover{
+    color: #3fb2d1;
+}
+.nav-drop-content .menu-item:last-child:after{
+   display: none;
+}
+/* .menu-item .after-non::after{
+    display: none;
+} */
 .main {
     width: 100%;
     min-height: 464px;
@@ -886,4 +912,138 @@ a {
     background-size: cover;
     padding-top: 43px;
     padding-bottom: 128px;
+}
+
+/* catalog-page.html */
+.cat-page {
+    padding-top: 23px;
+}
+
+.acardeon {
+    max-width: 327px;
+}
+
+.ac-menu-item {
+    margin-bottom: 9px;
+    color: #7b7b7b;
+    font-family: "Muller Regular";
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #3fb2d1;
+    cursor: pointer;
+}
+
+.ac-sub-item {
+    margin-top: 9px;
+}
+
+.cat-page-content {
+    max-width: 606px;
+    width: 100%;
+}
+
+.ac-menu {
+    width: 100%;
+}
+
+.ac-menu-item {
+    width: 100%;
+}
+
+.ac-sub {
+    width: 100%;
+    padding-left: 32px;
+}
+
+.ac-sub {
+    display: none;
+}
+
+.cat-page-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cat-page-card-body {
+    display: flex;
+    box-shadow: 7px 9px 24px 8px rgba(0, 0, 0, 0.13);
+}
+
+.cat-page-card-body-img {
+    max-width: 157px;
+    width: 100%;
+}
+
+.cat-page-card-body-img img {
+    width: 100%;
+}
+
+.cat-page-card-body-content {
+    padding: 15px 21px;
+
+    width: 100%;
+}
+
+.cat-page-card-body-content-title {
+    color: #000000;
+    font-family: "Muller Regular";
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+.cat-page-card-body-content-discr {
+    color: #727272;
+    font-family: "Muller Regular";
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 7px;
+    min-height: 73px;
+}
+
+.cat-page-card-btn-btn {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    font-family: "Muller Regular";
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 166px;
+    width: 100%;
+    margin-left: auto;
+    height: 23px;
+    background-color: #ec9b27;
+    transition: .3s;
+    
+}
+
+.cat-page-card-btn-btn:hover {
+   
+    background-color: #ffbc5c;
+    
+}
+
+.cat-page-card-body-content-btn {
+    width: 100%;
+    text-align: right;
+}
+
+.cat-page-card-title {
+    width: 100%;
+    min-height: 23px;
+    background-color: #3fb2d1;
+    margin-bottom: 20px;
+    padding-left: 11px;
+    padding-right: 11px;
+    color: #ffffff;
+    font-family: "Muller Regular";
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.cat-page-card{
+    margin-bottom: 28px;
 }
