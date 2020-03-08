@@ -69,9 +69,9 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
 }
 
 .menu {
@@ -79,7 +79,7 @@ a {
     display: flex;
     height: 80px;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     max-width: 650px;
     width: 100%;
 }
@@ -91,10 +91,10 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     position: relative;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 
 .menu-item:after {
@@ -154,7 +154,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     height: 70px;
 }
 
@@ -174,7 +174,7 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     margin-left: 25px;
 
 }
@@ -196,7 +196,7 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     margin-left: 46px;
 }
 
@@ -215,7 +215,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
 }
 
 .contacts-search {
@@ -225,7 +225,7 @@ a {
     padding-left: 21px;
     padding-right: 21px;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     border: 1px solid #e8e8e8;
     border-radius: 18px;
     margin-left: 30px;
@@ -265,7 +265,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
 }
 
 .cat-title {
@@ -322,7 +322,7 @@ a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
 }
 
 .feedback-title {
@@ -336,9 +336,9 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     padding-bottom: 56px;
     padding-top: 38px;
     box-shadow: 7px 9px 24px 8px rgba(0, 0, 0, 0.13);
@@ -438,7 +438,7 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     margin-bottom: 48px;
 }
 
@@ -472,3 +472,417 @@ a {
 }
 
 /* end footer */
+
+/* index.html Главная */
+
+.sub-nav {
+    width: 100%;
+    border-bottom: 2px solid #3fb2d1;
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.sub-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+}
+
+.sub-menu-item {
+    /* width: 20%; */
+    text-align: center;
+    max-width: 214px;
+    width: 100%;
+    height: 100%;
+}
+
+.sub-menu-link {
+    color: #191919;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -0.9px;
+    /* padding: 19px 0; */
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sub-menu-link:hover {
+    background-color: #3fb2d1;
+    color: #ffffff;
+}
+
+/* dropdown */
+.dropdown-menu {
+    width: 100%;
+    display: none;
+    position: relative;
+    z-index: 999;
+}
+.db{
+    display: block;
+}
+.drop-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: 132px;
+    background: white;
+}
+
+.nav-drop-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-drop-content ul {
+
+}
+.nav-drop-content .menu-item:after{
+    height: 30px;
+}
+.nav-drop-content .menu{
+    height: 43px;
+}
+
+.main {
+    width: 100%;
+    min-height: 464px;
+    background: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 35px;
+}
+
+.main-title {
+    color: #ffffff;
+    font-family: "Muller Bold";
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    display: block;
+    max-width: 153px;
+    width: 100%;
+    height: 5px;
+    background-color: #ebbb5f;
+}
+
+.main-discr {
+    max-width: 454px;
+    color: #ffffff;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.main-cat {
+    padding-top: 19px;
+    padding-bottom: 25px;
+}
+
+.main-h2 {
+    color: #101010;
+    font-family: "Muller Medium";
+    font-size: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 31px;
+    margin-top: 19px;
+}
+
+.cat-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-wrap-cat {
+    max-width: 299px;
+    width: 100%;
+    min-height: 178px;
+    box-shadow: 7px 9px 24px 8px rgba(0, 0, 0, 0.13);
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.card-cat-discr {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: 19px;
+    background-color: #3fb2d1;
+    color: #ffffff;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cat-img {
+    width: 100%;
+}
+
+.main-content {
+    position: relative;
+}
+
+.vertical-text {
+    color: #ffffff;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    font-weight: 400;
+    transform: rotate(-90deg);
+    width: max-content;
+    position: absolute;
+    left: -72px;
+    bottom: -100%;
+}
+
+/*  */
+.main-about {
+    padding-top: 19px;
+    background: url('../img/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 643px;
+    padding-bottom: 48px;
+}
+
+.about-line-title {
+    position: relative;
+    margin-bottom: 71px;
+}
+
+.about-line-title::after {
+    content: '';
+    display: block;
+    max-width: 112px;
+    width: 100%;
+    left: 160px;
+    height: 5px;
+    background-color: #3fb2d1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-cards-wrap {
+    max-width: 844px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 81px;
+}
+
+.mb {
+    margin-bottom: 145px;
+}
+
+.about-card {
+    color: #7c7c7c;
+    font-family: "Muller Medium";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 174px;
+    letter-spacing: -1.68px;
+}
+
+.about-wrap-btn-wrap {
+    width: 100%;
+    display: flex;
+    padding-left: 81px;
+    justify-content: center;
+}
+
+.main-about-btn {
+    margin-top: 86px;
+    max-width: 304px;
+    height: 44px;
+}
+
+/*  */
+.main-portfolio {
+    padding-top: 50px;
+    padding-bottom: 53px;
+}
+
+.main-portfolio .about-line-title:after {
+    left: 547px;
+}
+
+.main-portfolio .about-line-title {
+    margin-bottom: 67px;
+}
+
+/* .card-port-wrap{
+    width: 100%;
+    padding: 10px 15px;
+} */
+.card-port {
+    min-height: 350px;
+    position: relative;
+    transition: .3s;
+    width: 100%;
+    box-shadow: 7px 9px 24px 8px rgba(0, 0, 0, 0.13);
+}
+
+.card-port-top {
+    position: relative;
+}
+
+.card-port-top-img img {
+    width: 100%;
+}
+
+.slide-preview {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    max-width: 189px;
+    width: 100%;
+    height: 19px;
+    background-color: #3fb2d1;
+    color: #ffffff;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.card-port-bottom {
+    position: relative;
+    padding-top: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 9px;
+}
+
+.card-port-bottom-title {
+    color: #333333;
+    font-family: "Muller Bold";
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.card-port-bottom-adress {
+    color: #707070;
+    font-family: "Muller Medium";
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+.card-port-bottom-discr-work {
+    color: #333333;
+    font-family: "Muller Bold";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.swiper-slide {
+    box-shadow: 7px 9px 24px 8px rgba(0, 0, 0, 0.13);
+}
+
+.swiper-wrapper {
+    padding: 10px 15px;
+}
+
+.swiper-container {
+    padding-bottom: 100px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 0;
+}
+
+.card-port:hover {
+    min-height: 400px;
+}
+
+.card-port:hover .card-port-bottom-link {
+    display: block;
+}
+
+.card-port-bottom-link {
+    position: absolute;
+    bottom: 26px;
+    margin-left: 15px;
+    color: #333333;
+    font-family: "Muller Bold";
+    font-size: 15px;
+    display: none;
+}
+
+/*  */
+
+.works-stages .about-line-title:after {
+    left: 349px;
+}
+
+.work-card-img {
+    margin-bottom: 14px;
+}
+
+.works-cards-top {
+    max-width: 908px;
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+
+.works-cards-bottom {
+    max-width: 918px;
+    display: flex;
+    padding-left: 99px;
+    justify-content: space-between;
+}
+
+.work-card-title {
+    color: #282828;
+    font-family: "Muller Medium";
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.work-card-discr {
+    color: #686868;
+    font-family: "Muller Medium";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.works-stages {
+    background: url('../img/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 43px;
+    padding-bottom: 128px;
+}
