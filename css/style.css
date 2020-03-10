@@ -568,18 +568,23 @@ a {
     display: flex;
     justify-content: space-between;
 }
-.nav-drop-content .menu-item{
+
+.nav-drop-content .menu-item {
     max-width: unset;
 }
-.nav-drop-content .menu-link{
+
+.nav-drop-content .menu-link {
     transition: .3s;
 }
-.nav-drop-content .menu-link:hover{
+
+.nav-drop-content .menu-link:hover {
     color: #3fb2d1;
 }
-.nav-drop-content .menu-item:last-child:after{
-   display: none;
+
+.nav-drop-content .menu-item:last-child:after {
+    display: none;
 }
+
 /* .menu-item .after-non::after{
     display: none;
 } */
@@ -1016,13 +1021,13 @@ a {
     height: 23px;
     background-color: #ec9b27;
     transition: .3s;
-    
+
 }
 
 .cat-page-card-btn-btn:hover {
-   
+
     background-color: #ffbc5c;
-    
+
 }
 
 .cat-page-card-body-content-btn {
@@ -1044,6 +1049,39 @@ a {
     display: flex;
     align-items: center;
 }
-.cat-page-card{
+
+.cat-page-card {
     margin-bottom: 28px;
+}
+
+
+/* solutions.html */
+.cat-page-card-body-big {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 9px 24px 8px rgba(0, 0, 0, 0.13);
+}
+
+.cat-page-card-big-discr {
+    width: 100%;
+    margin-top: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: #7b7b7b;
+    font-family: "Muller Regular";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.cat-page-card-big-img {
+    display: flex;
+    justify-content: center;
+}
+
+/* contacts */
+
+.map-block{
+    width: 100%;
 }
