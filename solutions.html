@@ -11,8 +11,11 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container posr">
             <div class="header-wrap">
+                <div class="burger" id="headerBurger">
+                    <img src="img/burger-heder.png" alt="Открыть меню">
+                </div>
                 <ul class="menu">
                     <li class="menu-item">
                         <a href="index.html" class="menu-link">Главная</a>
@@ -42,7 +45,7 @@
         <div class="container">
             <div class="nav-wrap">
                 <div class="block-logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="img/LOGO.png" alt="Логотип">
                     </a>
                 </div>
@@ -53,25 +56,131 @@
                         </div>
                         <div class="contacts-phone-numbers">
                             <a href="tel:+789872667466">+7 8987 266 74 66</a>
+                            <div class="call-me">Заказать звонок</div>
                             <a href="tel:+789872667466">+7 8987 266 74 66</a>
                         </div>
                     </div>
                     <div class="contacts-address">
                         <span>г.Москва, московская область</span>
+                        <span style="margin-bottom: 10px;">Республика Татрстань</span>
                         <span>г.Казань, ул. Вишневского 26</span>
                     </div>
-                    <div class="contacts-search">
+                    <!-- <div class="contacts-search">
                         <input type="text">
                         <div class="search-icon">
                             <img src="img/lupa.png" alt="Найти">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </nav>
     <div class="layer"></div>
+    <nav class="sub-nav sub-nav-cat-page">
+        <div class="container posr">
+            <div class="sub-menu-mob">
+                <div class="burger" id="subBurger">
+                    <img src="img/burger.png" alt="Каталог товаров">
+                </div>
+                <div class="sub-nav-burger-title">
+                    Каталог товаров
+                </div>
+            </div>
 
+            <ul class="sub-menu">
+                <li class="sub-menu-item" data-val="1">
+                    <a href="#" class="sub-menu-link">
+                        Гидроизоляция
+                    </a>
+                </li>
+                <li class="sub-menu-item" data-val="2">
+                    <a href="#" class="sub-menu-link">
+                        Ремонт и защита
+                    </a>
+                </li>
+                <li class="sub-menu-item" data-val="3">
+                    <a href="#" class="sub-menu-link">
+                        Промышленные полы
+                    </a>
+                </li>
+                <li class="sub-menu-item" data-val="4">
+                    <a href="#" class="sub-menu-link">
+                        Защита металлических поверхностей
+                    </a>
+                </li>
+                <li class="sub-menu-item" data-val="5">
+                    <a href="#" class="sub-menu-link">
+                        Гидрофобизаторы
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="dropdown-menu">
+            <div class="drop-block">
+                <div class="container">
+                    <div class="nav-drop-content">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link after-non">Название</a>
+                            </li>
+                        </ul>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link after-non">Название</a>
+                            </li>
+                        </ul>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Название</a>
+
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link after-non">Название</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="cat-page">
         <div class="container">
             <div class="cat-title">
@@ -143,36 +252,21 @@
                 <div class="cat-page-content">
                     <!-- content -->
                     <!--  -->
-                    <!-- <div class="cat-page-card"> -->
-                        <!-- <div class="cat-page-card-title">
+                    <!-- <div class="cat-page-card">
+                        <div class="cat-page-card-title">
                             Очистители
-                        </div> -->
-                        <!-- <div class="cat-page-card-body">
-                            <div class="cat-page-card-body-img">
-                                <img src="img/bgi.png" alt="Фото товара">
-                            </div>
-                            <div class="cat-page-card-body-content">
-                                <div class="cat-page-card-body-content-title">
-                                    Название
-                                </div>
-                                <div class="cat-page-card-body-content-discr">
-                                    Описание
-                                </div>
-                                <div class="cat-page-card-body-content-btn">
-                                    <button class="btn">Подробнее</button>
-                                </div>
-                            </div>
-                            
-                        </div> -->
-                        <!-- <div class="cat-page-card-body-big">
+                        </div>
+                        <div class="cat-page-card-body-big">
                             <div class="cat-page-card-big-img">
                                 <img src="img/s.png" alt="Решение">
                             </div>
                             <div class="cat-page-card-big-discr">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                                Risus commodo viverra maecenas accumsan lacus vel facilisis.
                             </div>
-                        </div> -->
-                    <!-- </div> -->
+                        </div>
+                    </div> -->
                     <!--  -->
                     <h2>Выберите категорию</h2>
                 </div>
@@ -212,13 +306,17 @@
                             </div>
                             <div class="local">
                                 <a href="tel:+789872667466">+7 898 7266 74 66</a>
+                                <span>Республика Татрстан</span>
+                            </div>
+                            <div class="local">
+                                <a href="tel:+789872667466">+7 898 7266 74 66</a>
                                 <span>г. Казань, ул. Вишневского 26</span>
                             </div>
-                            <div class="social-block">
+                            <!-- <div class="social-block">
                                 <a href="#">
                                     <img src="img/insa.png" alt="Инстаграм">
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
